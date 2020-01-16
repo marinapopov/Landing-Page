@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:200&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Baskervville&display=swap');
 * {
     margin: 0;
     padding: 0;
     font-weight: 600;
     position: relative;
 }
+
 
 /* Header section */
 
@@ -51,7 +53,8 @@
     cursor: pointer;
 }
 
-/* Offerings section */
+
+/* Offers section */
 
 #offers {
     display: grid;
@@ -60,7 +63,6 @@
     padding: 0 0 25px;
 }
 
-
 .offersBoxForTitle {
     color: #4d4d26;
     font-size: 28px;
@@ -68,31 +70,115 @@
     margin: 50px 0 0;
     text-transform: uppercase;
     line-height: 50px;
+    font-family: 'Comfortaa', cursive;
+    letter-spacing: 3px;
 }
 
 .offersBoxForFeatures {
     display: grid;
-    grid-template-rows: 1fr; /* One row */
-    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    grid-template-rows: 1fr;
+    /* One row */
+    grid-template-columns: repeat(3, 1fr);
+    /* Three columns */
     max-width: 1400px;
     margin: auto;
 }
 
-#offersBox1, #offersBox2, #offersBox3 {
+#offersBox1,
+#offersBox2,
+#offersBox3 {
     text-align: center;
     margin: auto;
     max-width: 60%;
 }
 
-#offersBox1 h2, #offersBox2 h2, #offersBox3 h2 {
+#offersBox1 h2,
+#offersBox2 h2,
+#offersBox3 h2 {
     color: #4d4d26;
     padding: 15px 0 25px;
 }
 
-#offersBox1 p, #offersBox2 p, #offersBox3 p {
+#offersBox1 p,
+#offersBox2 p,
+#offersBox3 p {
     font-size: 16px;
     color: #796e49;
+    font-family: 'Baskervville', serif;
 }
+
+
+/* Gallery */
+
+.gallery-image {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery-image img {
+    height: 250px;
+    width: 350px;
+    transform: scale(1.0);
+    transition: transform 0.4s ease;
+}
+
+.img-box {
+    box-sizing: content-box;
+    margin: 10px;
+    height: 250px;
+    width: 350px;
+    overflow: hidden;
+    display: inline-block;
+    color: white;
+    position: relative;
+    background-color: white;
+}
+
+.caption {
+    position: absolute;
+    bottom: 5px;
+    left: 20px;
+    opacity: 0.0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.transparent-box {
+    height: 250px;
+    width: 350px;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: background-color 0.3s ease;
+}
+
+.img-box:hover img {
+    transform: scale(1.1);
+}
+
+.img-box:hover .transparent-box {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.img-box:hover .caption {
+    transform: translateY(-20px);
+    opacity: 1.0;
+}
+
+.img-box:hover {
+    cursor: pointer;
+}
+
+.caption>p:nth-child(2) {
+    font-size: 0.8em;
+}
+
+.opacity-low {
+    opacity: 0.5;
+}
+
 
 /* Team Section */
 
@@ -126,6 +212,7 @@
 
 .human img {
     justify-self: center;
+    border-radius: 50%;
 }
 
 .human span:nth-child(2) {
@@ -139,13 +226,16 @@
     font-size: 20px;
     color: #4d4d26;
 }
+
 .human p {
-    padding: 25px 0 0;
+    padding: 15px 0 0;
     max-width: 50%;
     margin: 0 auto;
     color: #796e49;
-    font-weight: 400;
+    font-weight: 700;
+    font-family: 'Baskervville', serif;
 }
+
 
 /* Between section */
 
@@ -155,6 +245,7 @@
     background: #4d4d26;
     color: #e5e3d7;
 }
+
 
 /* Pricing section */
 
@@ -172,7 +263,8 @@
     text-align: center;
 }
 
-#pricingBoxLeft, #pricingBoxRight {
+#pricingBoxLeft,
+#pricingBoxRight {
     background: #e5e3d7;
     margin: 10px 0;
     padding: 0 10px;
@@ -187,9 +279,8 @@
     color: #4a3942;
     padding: 15px 0 0;
     font-size: 22px;
-    font-style: italic;
     text-transform: uppercase;
-    font-weight: bold;
+    font-family: 'Dancing Script', cursive;
 }
 
 .pricingDuration {
@@ -198,6 +289,7 @@
     padding: 15px 0 0;
     text-transform: uppercase;
 }
+
 .pricingPrice {
     font-size: 60px;
     color: #7a6f4a;
@@ -230,8 +322,9 @@
 }
 
 #pricingBoxMiddle p {
-color: #c9c2b5;
+    color: #c9c2b5;
 }
+
 
 /* Footer */
 
@@ -244,4 +337,6 @@ footer {
     background-position: center center;
     background-size: cover;
     padding: 5px 0;
+    letter-spacing: 1px;
+    font-weight: 300;
 }
