@@ -136,6 +136,91 @@
     font-weight: 400;
 }
 
+/* Between section */
+
+#between .offeringsBoxForTitle {
+    margin: 0;
+    padding: 25px 0;
+    background: #4d4d26;
+    color: #e5e3d7;
+}
+
+/* Pricing section */
+
+#pricing {
+    background: #a8a592;
+    padding: 50px 0;
+}
+
+.pricingInside {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    max-width: 705px;
+    margin: auto;
+    text-align: center;
+}
+
+#pricingBoxLeft, #pricingBoxRight {
+    background: #e5e3d7;
+    margin: 10px 0;
+    padding: 0 10px;
+}
+
+#pricingBoxMiddle {
+    background: #3c2221;
+    padding: 0 10px;
+}
+
+.pricingTitle {
+    color: #4a3942;
+    padding: 15px 0 0;
+    font-size: 22px;
+    font-style: italic;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.pricingDuration {
+    color: #64363e;
+    font-size: 16px;
+    padding: 15px 0 0;
+    text-transform: uppercase;
+}
+.pricingPrice {
+    font-size: 60px;
+    color: #7a6f4a;
+    padding: 25px 0;
+}
+
+.pricingDesc {
+    line-height: 2;
+    color: #7a6f4a;
+    padding: 0 0 25px;
+}
+
+.pricingButton {
+    border: none;
+    background: #c33f56;
+    padding: 15px 25px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+#pricingBoxMiddle .pricingTitle {
+    padding-top: 15px;
+}
+#pricingBoxMiddle div {
+    color: #e5e3d7 !important;
+}
+#pricingBoxMiddle p {
+color: #c9c2b5;
+}
+/* footer */
+
 footer {
     text-align: center;
     font-size: 12px;
