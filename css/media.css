@@ -1,0 +1,53 @@
+
+@media screen and (max-width: 800px) {
+    .headerBoxForSpan span {
+        font-size: 54px !important;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .innerTeam {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .human {
+        grid-template-rows: 90px 35px 50px;
+    }
+    .human span:nth-child(2) {
+        line-height:35px;
+    }
+    .human span:nth-child(3) {
+        max-width: 80%;
+        margin: auto;
+    }
+    .human p {
+        display: none;
+    }
+    .offeringsBoxForTitle span{
+        font-size: 20px;
+    }
+    #pricingBoxLeft, #pricingBoxRight {
+        width: 75%;
+        margin: auto;
+    }
+    #pricingBoxMiddle {
+        width: 80%;
+        margin: auto;
+    }
+    .pricingDesc {
+        max-width: 60%;
+        margin: auto;
+    }
+    .pricingInside {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+}
+@media screen and (max-width: 400px) {
+    .headerBoxForSpan span {
+        font-size: 32px !important;
+    }
+}
